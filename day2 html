@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Html learning</title>
+</head>
+
+<body>
+    <h1>HTML &lt;p&gt; Tag</h1>
+    <p>
+        HTML tag defines the paragraph and is used to give structure to text content within a webpage. It is a
+        block-level
+        element & used to add the space or margins after and before the element this is done by browsers by default.
+    </p>
+    <p>
+        Note: The HTML
+        tag supports the Global Attributes and Event Attributes.
+    </p>
+    <p>This</p>
+<p>is</p>
+    <span>This</span>
+    <span>is</span>
+    <div>This</div>
+    <div>is</div>
+    <!-- link -->
+    <a href="https://www.w3schools.com/html/" target="_blank">W3school link</a>
+</body>
+
+</html>
