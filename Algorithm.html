@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Algorithm.html</title>
+    </head>
+    <body>
+        <h1>Algorithm</h1>
+        <!-- unordered Link -->
+        <ul>
+            <li>Set the Multiplicand and Multiplier values in binary bits formats as M and Q, respectively.</li>
+            <li>At a starting, set the AC and Q<sub>n+1 registers values to 0.</sub></li>
+            <li>AS an SC represent the number of bits in the multiplier (Q).According to that set the value of SC.The value of SC goes on decreasing with each repetition of the computation loop until its value reaches 0. </li>
+            <li>The Q<sub>n</sub> represents the last  bit of the Q ,and the Q<sub>n+1</sub>shows the incremented bit of Q<sub>n</sub> by 1.</li>
+            <li>At each iteration Booth's algorithm checks the condition of Q<sub>n</sub>Q<sub>n+1 bits.</sub></li>
+        </ul>
+    
+        <h2>A] If the bits of Q<sub>n</sub>Q<sub>n+1</sub> represent 01</h2>
+             <ul>
+                <li>Then Multiplicand Bits (M) is added to the Accumulator Counter (AC =AC+M). </li>
+                <li> Then <strong>Arithmetic Right Shift</strong> operation performs on AC Q<sub>n</sub>Q<sub>n+1</sub> bits by 1.</li>
+                <li> Then decrease the value of Sequence Counter by 1.</li>
+             </ul>
+        <h2>B] If the bits of Q<sub>n</sub>Q<sub>n+1</sub> represent 10,</h2>
+             <ul>
+                <li>Then Multiplicand Bits (-M) is subtracted from the Accumulator Counter <strong>(AC=AC-M).</strong></li>
+                <li>Then <strong> Arithmetic Right Shift </strong> operation performs on AC Q<sub>n</sub>Q<sub>n+1</sub> bits by 1.</li>
+                <li>Then decrease the value of sequence Counter by 1.</li>
+             </ul>  
+        
+   </body>
+</html>
