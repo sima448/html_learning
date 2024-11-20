@@ -1,0 +1,9 @@
+<DOCTYPE html>
+    <html> 
+        <head> 
+            <title>my first web page </title>
+        </head>
+        <body bgcolor="green">
+            <font size="16" color=white"face="Arial>Welcome to AITS, tirupaty...</font>
+                </body>
+    </html>
