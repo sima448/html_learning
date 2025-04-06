@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>The input element</h1>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Click the "Submit" button and the form-data will be sent to a page on the server called "action_page.php."</p>
+    <!--<input type="button">-->
+    <h3>A demonstration of how to access an Input Button</h3>
+    <p>Click the button get the text that is displayed on the button.</p>
+    <input type="button" id="myBtn" onclick="myfunction()" value="Try it">
+    <p iid="demo"></p>
+    <script>
+        function myFunction() {
+            var x=document.getElementByIa("myBtn").value;
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+    <!-- another way to <input type="button">--> 
+    <p>Click the button to create an Input button with a "Click me" text</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>function myFunction() {
+        var x=document.createElement("INPUT");
+        x.setAttribute("type", "button");
+        x.setAttribute("value", "Click me");
+        document.body.appendChild(x);
+    }
+    </script>
+</body>   
+</html>
+

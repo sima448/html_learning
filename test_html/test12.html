@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>A demonstration of how to access a local Detetime field</h3>
+        <input type="datetime-local" id="myLocalDate" value="2025-11-15T15:25:33">
+        <p>Click the button to get the local datetime field</p>
+        <button onclick="myFunction()">Try it</button>
+        <p><strong>Note:</strong> input elements with type="datetime-local" do not show as any datetime field/calendar in Firefox.</p>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+                var x = document.getElementBYId("myFunction").value;
+                document.getElementById("demo").innerHTML = x;
+
+            }
+        </script>
+
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+    <body>
+    <p>Click the button to create a local Datetime field.</p>
+    <button onclick="myFunction()">Try it</button>
+    <script>
+        function myFunction() {
+            var x = document.createElement("INPUT");
+            x.setAttribute("type", "datetime-local");
+            document.body.appendChild(x);
+        }
+    </script>
+    </body>
+</html>

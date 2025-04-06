@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h3>A demonstration of how to access a hidden Input Field</h3>
+        <input type="hidden" id="myInput" value="W3Schools">
+        <p>Click the button to get the value of the hidden input field.</p>
+        <button onclick="myFunction()">Try it</button>
+        <P id="demo"></P>
+        <script>
+            function myFunction(){
+                var x = document.getElementById("myInput").value;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Click the button to create a Hidden Input Field.</p>
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+   function myFunction() {
+        var x = document.createElement("INPUT");
+        x.setAttribute("type", "hidden");
+        document.body.appendChild(x);
+        document.getElementById("demo").innerHTML = "The Hidden Input Field was created. However, you are not able to see it because it is hidden (not visible).";
+}
+</script>
+
+</body>
+</html>

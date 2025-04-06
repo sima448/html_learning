@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My hobbies</h1>
+    <from action="/action_page.php" method="get">
+        <input type="checkbox" name="hobbies" value="walking">
+        <lable for="hobbies1">walking</lable><br>
+        <input type="checkbox" name="hobbies" value="drinking water">
+        <lable for="hobbies2">drinking water</lable><br>
+        <input type="checkbox" name="hobbies" value="running">
+        <lable for="hobbies3">running</lable><br>
+        <input type="checkbox" name="hobbies" value="cooking">
+        <lable for="hobbies4">cooking</lable><br>
+        <input type="checkbox" name="hobbies" value="studies">
+        <lable for="hobbies5">studies</lable><br><br>
+    </from>
+    <button onclick="myFunction()">Submit</button>
+    <script>
+        function myFunction(){
+            const sl = Array.from(document.querySelectorAll("input[type=checkbox]:checked")).map(checkbox => checkbox.value)
+            alert(sl?.join(',') ?? "none");
+        }
+    </script>
+</body>
+</html>
